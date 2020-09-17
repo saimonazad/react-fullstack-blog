@@ -1,0 +1,9 @@
+{
+  "name": "react-fullstack-blog",
+  "version": "1.0.0",
+  "description": "Fullstack blog with React/NodeJS/MongoDB",
+  "main": "index.js",
+  "repository": "https://github.com/github.com/saimonazad",
+  "author": "Alauddin Al Azad",
+  "license": "MIT"
+}
