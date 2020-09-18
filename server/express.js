@@ -5,6 +5,7 @@ import cors from 'cors'
 import helmet from 'helmet'
 import userRoutes from './routes/user.routes'
 import authRoutes from './routes/auth.routes'
+import postRoutes from './routes/post.routes'
 import path from 'path'
 
 const CURRENT_WORKING_DIR = process.cwd()
@@ -21,6 +22,7 @@ app.use('/dist', express.static(path.join(CURRENT_WORKING_DIR, 'dist')))
 
 app.use('/', userRoutes);
 app.use('/', authRoutes);
+app.use('/', postRoutes);
 
 app.get('*', (req, res) => {
     res.status(200).send("hello api");
